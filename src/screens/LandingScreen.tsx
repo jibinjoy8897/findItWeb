@@ -1,10 +1,17 @@
 import "./style.css";
+import axios from "axios";
 
+const apiCall = () => {
+  // axios.get("http://localhost:8080").then((data) => {
+  axios.get("https://find-it-dj5lrl1kg-jibin-joys-projects-4e286f1b.vercel.app/").then((data) => {
+    console.log("data", data);
+  });
+};
 const LandingScreen = () => {
   return (
     <>
       <nav
-        //   onClick="redirectGithub()"
+          onClick={apiCall}
         className="cursor-pointer"
       >
         <p>Click here to check the github repository</p>
