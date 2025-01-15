@@ -3,7 +3,7 @@ import axios from "axios";
 
 const apiCall = () => {
   // axios.get("http://localhost:8080").then((data) => {
-  axios.get("https://find-it-dj5lrl1kg-jibin-joys-projects-4e286f1b.vercel.app/").then((data) => {
+  axios.get("https://find-it-api.vercel.app/").then((data) => {
     console.log("data", data);
   });
 };
